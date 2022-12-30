@@ -19,7 +19,7 @@ public abstract class BahanMentah {
     protected int beratEsBatu = 1000;
     protected int beratKeju = 250;
     protected int beratCoklat = 500;
-    protected int beratKrimVanila = 500;
+    protected int beratKrimVanilla = 500;
     protected int beratSelaiRedBean = 500;
     protected int beratSosis = 1000;
     protected int beratSmokedBeef = 1000;

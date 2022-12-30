@@ -39,12 +39,14 @@ private double hargaEsBatuPizzaPcs = hargaEsBatuPizza / (totalBeratAdonanPizza/b
 
     @Override
     public double toppingCoklat(double x) {
-        return 0;
+        double hargaToppingCoklat = (x/beratCoklat)*hargaCoklat;
+        return hargaToppingCoklat;
     }
 
     @Override
     public double toppingKrimVanilla(double x) {
-        return 0;
+        double hargaToppingKrimVanilla = (x/beratKrimVanilla) * hargaKrimVanilla;
+        return hargaToppingKrimVanilla;
     }
 
     @Override
