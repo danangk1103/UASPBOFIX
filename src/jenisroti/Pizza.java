@@ -87,10 +87,10 @@ private double hargaEsBatuPizzaPcs = hargaEsBatuPizza / (totalBeratAdonanPizza/b
         System.out.println("EsBatu " + x*beratEsBatuPizzaPcs + " gram seharga Rp " + x*hargaEsBatuPizzaPcs);
         System.out.println("=======================================");
         System.out.println("Topping : ");
-        System.out.println("Keju 30 gram seharga Rp " + this.toppingKeju(30));
-        System.out.println("Sosis 50 gram seharga Rp " + this.toppingSosis(50));
-        System.out.println("SmokedBeef 50 gram seharga Rp " + this.toppingSmokedBeef(50));
-        System.out.println("Bawang Bombay 30 gram seharga Rp " + this.toppingBawangBombay(30));
+        System.out.println("Keju "+ x*30 + " gram seharga Rp " + x*this.toppingKeju(30));
+        System.out.println("Sosis "+ x*50 +" gram seharga Rp " + x*this.toppingSosis(50));
+        System.out.println("SmokedBeef "+ x*50 +" gram seharga Rp " + x*this.toppingSmokedBeef(50));
+        System.out.println("Bawang Bombay "+ x*30 + " gram seharga Rp " + x*this.toppingBawangBombay(30));
         System.out.println("=======================================");
         System.out.println("Harga per pcs : Rp " + Math.round((150/100)*(hargaTepungTeriguPizzaPcs + hargaGulaPasirPizzaPcs + hargaButterPizzaPcs + hargaRagiPizzaPcs + hargaSusuBubukPizzaPcs + hargaSusuCairPizzaPcs + hargaTelurPizzaPcs + hargaEsBatuPizzaPcs + this.toppingKeju(30) + this.toppingSosis(50) + this.toppingSmokedBeef(50) + this.toppingBawangBombay(30))));
         System.out.println("Harga Total : Rp " + Math.round(x * ((150/100)*(hargaTepungTeriguPizzaPcs + hargaGulaPasirPizzaPcs + hargaButterPizzaPcs + hargaRagiPizzaPcs + hargaSusuBubukPizzaPcs + hargaSusuCairPizzaPcs + hargaTelurPizzaPcs + hargaEsBatuPizzaPcs + this.toppingKeju(30) + this.toppingSosis(50) + this.toppingSmokedBeef(50) + this.toppingBawangBombay(30)))));

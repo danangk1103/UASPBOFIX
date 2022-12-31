@@ -5,6 +5,7 @@
 package jenisroti;
 
 import adonan.AdonanRotiManis;
+import fillingandtopping.Filling;
 import fillingandtopping.Topping;
 import java.lang.Math;
 
@@ -12,7 +13,7 @@ import java.lang.Math;
  *
  * @author Lenovo
  */
-public class RotiManis extends AdonanRotiManis implements Topping{
+public class RotiManis extends AdonanRotiManis implements Filling,Topping{
     private int beratAdonanRotiManisPcs = 50;
     private double beratTepungTeriguRotiManisPcs = beratTepungTeriguRotiManis / (totalBeratAdonanRotiManis/beratAdonanRotiManisPcs);
     private double beratGulaPasirRotiManisPcs = beratGulaPasirRotiManis / (totalBeratAdonanRotiManis/beratAdonanRotiManisPcs);
@@ -45,7 +46,7 @@ public class RotiManis extends AdonanRotiManis implements Topping{
 
     @Override
     public double toppingKrimVanilla(double x) {
-        double hargaToppingKrimVanilla = (x/beratKrimVanila)*hargaKrimVanilla;
+        double hargaToppingKrimVanilla = (x/beratKrimVanilla)*hargaKrimVanilla;
         return hargaToppingKrimVanilla;
     }
 
@@ -73,6 +74,48 @@ public class RotiManis extends AdonanRotiManis implements Topping{
         return hargaToppingBawangBombay;
     }
     
+    @Override
+    public double fillingKeju(double x) {
+        double hargaFillingKeju = (x/beratKeju)*hargaKeju;
+        return hargaFillingKeju;
+    }
+
+    @Override
+    public double fillingCoklat(double x) {
+        double hargaFillingCoklat = (x/beratCoklat)*hargaCoklat;
+        return hargaFillingCoklat;
+    }
+
+    @Override
+    public double fillingKrimVanilla(double x) {
+        double hargaFillingKrimVanilla = (x/beratKrimVanilla)*hargaKrimVanilla;
+        return hargaFillingKrimVanilla;
+    }
+
+    @Override
+    public double fillingSelaiRedBean(double x) {
+        double hargaFillingSelaiRedBean = (x/beratSelaiRedBean) * hargaSelaiRedBean;
+        return hargaFillingSelaiRedBean;
+    }
+
+    @Override
+    public double fillingSosis(double x) {
+        double hargaFillingSosis = (x/beratSosis) * hargaSosis;
+        return hargaFillingSosis;
+    }
+
+    @Override
+    public double fillingSmokedBeef(double x) {
+        double hargaFillingSmokedBeef = (x/beratSmokedBeef) * hargaSmokedBeef;
+        return hargaFillingSmokedBeef;
+    }
+
+    @Override
+    public double fillingBawangBombay(double x) {
+        double hargaFillingBawangBombay = (x/beratBawangBombay) * hargaBawangBombay;
+        return hargaFillingBawangBombay;
+    }
+    
     public void varian1(int x){
         System.out.println("RotiManis varian 1 sebanyak " + x + " pcs");
         System.out.println("=======================================");
@@ -87,8 +130,8 @@ public class RotiManis extends AdonanRotiManis implements Topping{
         System.out.println("EsBatu " + x*beratEsBatuRotiManisPcs + " gram seharga Rp " + x*hargaEsBatuRotiManisPcs);
         System.out.println("=======================================");
         System.out.println("Filling : ");
-        System.out.println("Keju 5 gram seharga Rp " + this.toppingKeju(5));
-        System.out.println("Coklat 5 gram seharga Rp " + this.toppingCoklat(5));
+        System.out.println("Keju 5 gram seharga Rp " + this.fillingKeju(5));
+        System.out.println("Coklat 5 gram seharga Rp " + this.fillingCoklat(5));
         System.out.println("=======================================");
         System.out.println("Topping : ");
         System.out.println("Coklat 5 gram seharga Rp " + this.toppingCoklat(5));
@@ -98,7 +141,7 @@ public class RotiManis extends AdonanRotiManis implements Topping{
     }
 
     public void varian2(int x){
-        System.out.println("RotiManis varian 1 sebanyak " + x + " pcs");
+        System.out.println("RotiManis varian 2 sebanyak " + x + " pcs");
         System.out.println("=======================================");
         System.out.println("Bahan Adonan : ");
         System.out.println("Tepung Terigu " + x*beratTepungTeriguRotiManisPcs + " gram seharga Rp " + x*hargaTepungTeriguRotiManisPcs);
@@ -111,7 +154,7 @@ public class RotiManis extends AdonanRotiManis implements Topping{
         System.out.println("EsBatu " + x*beratEsBatuRotiManisPcs + " gram seharga Rp " + x*hargaEsBatuRotiManisPcs);
         System.out.println("=======================================");
         System.out.println("Filling : ");
-        System.out.println("Red Bean 10  gram seharga Rp " + this.toppingSelaiRedBean(10));
+        System.out.println("Red Bean 10  gram seharga Rp " + this.fillingSelaiRedBean(10));
         System.out.println("=======================================");
         System.out.println("Topping : ");
         System.out.println("Krim Vanilla 5 gram seharga Rp " + this.toppingKrimVanilla(5));
@@ -121,7 +164,7 @@ public class RotiManis extends AdonanRotiManis implements Topping{
     }
 
     public void varian3(int x){
-        System.out.println("RotiManis varian 1 sebanyak " + x + " pcs");
+        System.out.println("RotiManis varian 3 sebanyak " + x + " pcs");
         System.out.println("=======================================");
         System.out.println("Bahan Adonan : ");
         System.out.println("Tepung Terigu " + x*beratTepungTeriguRotiManisPcs + " gram seharga Rp " + x*hargaTepungTeriguRotiManisPcs);
@@ -134,9 +177,10 @@ public class RotiManis extends AdonanRotiManis implements Topping{
         System.out.println("EsBatu " + x*beratEsBatuRotiManisPcs + " gram seharga Rp " + x*hargaEsBatuRotiManisPcs);
         System.out.println("=======================================");
         System.out.println("Filling : ");
-        System.out.println("Keju 10  gram seharga Rp " + this.toppingKeju(10));
-        System.out.println("Sosis 10  gram seharga Rp " + this.toppingSosis(10));
+        System.out.println("Keju 10  gram seharga Rp " + this.fillingKeju(10));
+        System.out.println("Sosis 10  gram seharga Rp " + this.fillingSosis(10));
         System.out.println("=======================================");
         System.out.println("Harga per pcs : Rp " + Math.round((150/100)*(hargaTepungTeriguRotiManisPcs + hargaGulaPasirRotiManisPcs + hargaButterRotiManisPcs + hargaRagiRotiManisPcs + hargaSusuBubukRotiManisPcs + hargaSusuCairRotiManisPcs + hargaTelurRotiManisPcs + hargaEsBatuRotiManisPcs + this.toppingKeju(10) + this.toppingSosis(10))));
         System.out.println("Harga Total : Rp " + Math.round(x * ((150/100)*(hargaTepungTeriguRotiManisPcs + hargaGulaPasirRotiManisPcs + hargaButterRotiManisPcs + hargaRagiRotiManisPcs + hargaSusuBubukRotiManisPcs + hargaSusuCairRotiManisPcs + hargaTelurRotiManisPcs + hargaEsBatuRotiManisPcs + this.toppingKeju(10) + this.toppingSosis(10)))));
+    }
 }

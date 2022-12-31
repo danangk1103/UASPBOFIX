@@ -9,11 +9,11 @@ package fillingandtopping;
  * @author Lenovo
  */
 public interface Filling {
-    public double toppingKeju();
-    public double toppingCoklat();
-    public double toppingKrimVanilla();
-    public double toppingSelaiRedBean();
-    public double toppingSosis();
-    public double toppingSmokedBeef();
-    public double toppingBawangBombay();
+    public double fillingKeju(double x);
+    public double fillingCoklat(double x);
+    public double fillingKrimVanilla(double x);
+    public double fillingSelaiRedBean(double x);
+    public double fillingSosis(double x);
+    public double fillingSmokedBeef(double x);
+    public double fillingBawangBombay(double x);
 }
