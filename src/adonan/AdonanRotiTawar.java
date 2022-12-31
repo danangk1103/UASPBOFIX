@@ -27,5 +27,5 @@ public class AdonanRotiTawar extends BahanMentah{
     protected double hargaSusuCairRotiTawar = 0.20 * hargaSusuCair;
     protected double hargaTelurRotiTawar = 0.07 * hargaTelur;
     protected double hargaEsBatuRotiTawar = 0.30 * hargaEsBatu;
-    protected double totalBeratAdonanRotiManis = beratTepungTeriguRotiTawar + beratGulaPasirRotiTawar + beratButterRotiTawar + beratRagiRotiTawar + beratSusuBubukRotiTawar + beratSusuCairRotiTawar + beratTelurRotiTawar + beratEsBatuRotiTawar;
+    protected double totalBeratAdonanRotiTawar = beratTepungTeriguRotiTawar + beratGulaPasirRotiTawar + beratButterRotiTawar + beratRagiRotiTawar + beratSusuBubukRotiTawar + beratSusuCairRotiTawar + beratTelurRotiTawar + beratEsBatuRotiTawar;
 }
