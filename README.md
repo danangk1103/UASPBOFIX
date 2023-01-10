@@ -1,5 +1,5 @@
-# UASPBOFIX
-Untuk menuntaskan tugas UAS PBO 2022 dengan kelompok beranggotakan :
+# PROJECT PERHITUNGAN TOKO ROTI PEMROGRAMAN BERORIENTASI OBJEK
+Repository ini dibuat untuk menuntaskan tugas UAS PBO 2022 dengan kelompok beranggotakan :
 
 Danang Kurniawan                  (K3521016)<br>
 Ondihon Simanjuntak               (K3521058)<br>
