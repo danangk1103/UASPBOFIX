@@ -7,4 +7,5 @@ Hakiki Al Qorni                   (K3521032)<br>
 Kevin Alexander Josa Sudarmono    (K3521076)<br>
 <br>
 <h1>Diagram Class</h1>
-<img scr="DiagramClassUASPBO.png">
+<br>
+<img src="DiagramClassUASPBO.png">
